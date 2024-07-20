@@ -1,0 +1,722 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif, serif;
+}
+body {
+    background: #fff;
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+} 
+/*Main-beaches*/
+.main-header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/main-img/sea1.jpg);
+    background-size: cover; 
+    object-fit: cover;
+    padding: 10px 14%;
+}
+.main-navbar {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-navbar .main-logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 30px;
+    box-shadow: 2px 2px 5px #222;
+    border-radius: 3px;    
+    background-image: url(images/main-img/flag.png);
+    background-size: cover;
+    object-fit: cover;
+}
+.main-navbar .main-logo a {
+    color: #eee;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+.main-navbar .main-logo:hover {
+    color: #4356ff;
+    text-decoration: underline 3px;
+}
+.main-nav-link {
+    display: flex;
+    gap: 5px;
+}
+.main-nav-link li { 
+    background: #eee;
+    padding: 3px;
+    border-radius: 3px; 
+    box-shadow: 2px 2px 5px #222;   
+}
+.main-nav-link a {    
+    color: #2c2c2c;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+   
+}
+.main-nav-link li:hover {
+    color: #4356ff;
+    text-decoration: underline 3px;   
+}
+.main-header h1 {
+    padding-top: 8rem;
+    font-size: 4rem;
+    letter-spacing: 6px;
+    color: #2c2c2c;
+    font-family: sans-serif;
+}
+.main-header h2 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    line-height: 2.25rem;
+    color: #2c2c2c;
+}
+.main-header p {
+    color: #eee;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    background: #2c2c2c;
+    border-radius: 3px;
+    width: 80%;
+    padding: 5px;
+}
+main {
+    padding: 0 14%;
+}
+.main-section-beaches {
+    margin-bottom: 10%;
+}
+.main-sub-heading { 
+    text-align: center; 
+} 
+.main-sub-heading h2 {
+    font-size: 2rem;
+    color: #2c2c2c;
+    letter-spacing: 2.5px;
+    padding-top: 6rem;
+}
+.main-sub-heading h3 {
+    font-size: 1.2rem;
+    color: #2c2c2c;
+    letter-spacing: 2px;
+    line-height: 1.8rem;
+    padding-bottom: 10px;
+}
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: 1mg2; 
+}
+.img3 {
+    grid-area: img3;
+}
+.main-beaches-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 18rem);
+    grid-template-areas: 
+    " img1 img2 "
+    " img1 img3 ";
+}
+.main-beaches-content {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #999;
+}
+.main-beaches-content img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+.main-beaches-content img:hover {
+    transform: scale(1.01);
+}
+.main-beaches-content h3 {
+    padding: 1rem;
+    position: absolute;
+    color: #2c2c2c;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.main-beaches-content p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2%;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1.2rem;
+    color: #2c2c2c;
+    background: #eee;
+}
+.img1 p {
+    background: #2c2c2c;
+    color: #eee;
+}
+footer {
+    width: 100%;
+    padding: 1rem 5%;
+    background-color: #2c2c2c;
+    color: #eee;
+}
+/*Main Activities*/
+.main-section-activities {
+    background: #eee;
+}
+.main-heading-activities {
+    text-align: center;
+    padding: 1rem;
+}
+.main-heading-activities h2 {
+    font-size: 2rem;
+    color: #2c2c2c;
+}
+.main-activities-content {
+    display: flex;
+}
+.main-activities-division {
+    width: 100%;
+    padding: 1rem;
+}
+.main-activities-division img {
+    width: 60%;
+    height: 16rem;
+    border-radius: 3px;
+    transition: .3s;
+}
+.main-activities-division img:hover {
+    transform: scale(1.01);
+}
+.main-activities-division h3 {
+    color: #2c2c2c;
+    font-size: 1.2rem;
+    letter-spacing: .4px;
+}
+.main-activities-link {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Sub-beaches*/
+.header-beaches {
+    text-align: center;
+}
+.navbar-beaches {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 10px 14%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.navbar-beaches .logo-beaches {
+    text-align: center;
+    align-content: center;
+    width: 45px;
+    height: 30px;
+    box-shadow: 2px 2px 5px #222;
+    border-radius: 3px;    
+    background-image: url(images/main-img/flag.png);
+    background-size: cover;
+    object-fit: cover;
+}
+.navbar-beaches .logo-beaches a {
+   color: #eee;
+   font-size: 18px;
+   font-weight: bold;
+   letter-spacing: .5px;
+}
+.navlink-beaches {
+    background: #eee;
+    padding: 3px;
+    box-shadow: 2px 2px 5px #222;
+    border-radius: 3px;      
+}
+.navlink-beaches a {
+    color: #2c2c2c;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.navbar-beaches li:hover {
+    text-decoration: underline 3px;
+    color: #4356ff;
+}
+.header-beaches h1 {     
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: #2c2c2c;
+    padding-top: 9rem;
+    font-family: sans-serif;   
+}
+.header-beaches h2 { 
+    font-size: 1.3rem;
+    color: #2c2c2c;
+    line-height: 1.95rem;
+    letter-spacing: 2.4px;
+}
+.beaches-btn {
+    margin: 1rem;
+    text-align: center;
+    border-radius: 3px;
+    font-family: 'Times New Roman', Times, serif;
+} 
+.beaches-btn a {
+    font-size: 1rem; 
+    color: #eee;
+    padding: 5px;
+    letter-spacing: 1.9px;
+    border-radius: 3px;
+    background: #4356ff;
+}
+.beaches-btn:hover {
+    text-decoration: underline;
+    text-decoration-color: #eee;
+    text-decoration-thickness: 3px;
+} 
+.sub-header-luzon,
+.sub-header-Visayas,
+.sub-header-mindanao h2 {
+    margin-top: 1rem;
+    color: #eee;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 1.5px;
+    background: #2c2c2c;
+} 
+.beaches-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #eee;
+    margin-bottom: 2rem;
+}
+.beaches-container img {
+    width: 100%;
+    height: 18rem;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #999;
+    object-fit: cover;
+    transition: .3s;
+}
+.beaches-container img:hover {
+    transform: scale(1.01);
+}
+.beaches-content {
+    padding: 1rem;
+    width: 100%;
+}
+.beaches-content H3 {
+    color: #2c2c2c;
+    text-align: center;
+    padding-bottom: .5rem;
+    letter-spacing: 2px;
+} 
+.beaches-content p {
+    font-size: 1rem;
+    color: #2c2c2c;
+    letter-spacing: 2px;
+    line-height: 1.2rem;
+}
+/*Sub-activities*/
+.navbar-activity {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 14%;
+    justify-content: space-between;
+    z-index: 1;
+}
+.navbar-activity .logo-activity {
+    text-align: center;
+    align-content: center;
+    width: 45px;
+    height: 30px;
+    box-shadow: 2px 2px 5px #222;
+    border-radius: 3px;    
+    background-image: url(images/main-img/flag.png);
+    background-size: cover;
+    object-fit: cover;
+}
+.navbar-activity .logo-activity a {
+   color: #eee;
+   font-size: 1.2rem;
+   font-weight: bold;
+   letter-spacing: .5px;
+}
+.navbar-activity li:hover {
+    text-decoration: underline 3px;
+    color: #4356ff;
+}
+.navlink-activity {
+    text-align: center;
+    align-content: center;
+    background: #eee;
+    padding: 3px;
+    box-shadow: 2px 2px 5px #222;
+    border-radius: 3px;   
+}
+.navlink-activity a {
+    color: #2c2c2c;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+.header-luzviminda-activity {
+    text-align: center;
+}
+.header-luzviminda-activity h1 {     
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: #2c2c2c;
+    padding-top: 9rem; 
+    font-family: sans-serif;  
+}
+.header-luzviminda-activity h2 { 
+    font-size: 1.3rem;
+    color: #2c2c2c;
+    padding-top: 5px;
+    letter-spacing: 2.4px;
+}
+.sub-header-luzvimin-act h2 {
+    margin-top: 1rem;
+    color: #eee;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 1.5px;
+    background: #2c2c2c; 
+}
+.activity-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #eee;
+    margin-bottom: 2rem;
+}
+.activity-container img {
+    width: 50%;
+    height: 18rem;
+    border-radius: 3px;
+    object-fit: cover;
+    transition: .3s;
+}
+.activity-content {
+    padding: 1rem;
+    width: 50%;
+}
+.activity-content H3 {
+    color: #2c2c2c;
+    text-align: center;
+    padding-bottom: .5rem;
+    letter-spacing: 2px;
+} 
+.activity-content p {
+    font-size: 1rem;
+    color: #2c2c2c;
+    letter-spacing: 2px;
+    line-height: 1.2rem;
+}
+/*Do activities*/
+.navbar-do {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 14%;
+    justify-content: space-between;
+    z-index: 1;
+}
+.navbar-do .logo-do {
+    text-align: center;
+    align-content: center;
+    width: 45px;
+    height: 30px;
+    box-shadow: 2px 2px 5px #555;
+    border-radius: 3px;    
+    background-image: url(images/main-img/flag.png);
+    background-size: cover;
+    object-fit: cover;
+}
+.navbar-do .logo-do a {
+   color: #eee;
+   font-size: 1.2rem;
+   font-weight: bold;
+   letter-spacing: .5px;
+}
+.navbar-do li:hover {
+    text-decoration: underline 4px;
+    color: #4356ff;
+}
+.navlink-do {
+    text-align: center;
+    align-content: center;
+    background: #eee;
+    padding: 3px;
+    box-shadow: 2px 2px 5px #222;
+    border-radius: 3px; 
+}
+.navlink-do a {
+    color: #2c2c2c;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+.header-do {
+    text-align: center;
+}
+.header-do h1 {     
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: #2c2c2c;
+    padding-top: 9rem; 
+    font-family: sans-serif;
+}
+.header-do h2 { 
+    font-size: 1.3rem;
+    color: #2c2c2c;
+    padding-top: 5px; 
+    letter-spacing: 2.4px;
+}
+.sub-header-do h2 {
+    margin-top: 1rem;
+    text-align: center;
+    color: #eee;
+    padding: 5px;
+    letter-spacing: 1.5px;
+    background: #2c2c2c;
+} 
+.container-do {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #eee;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px #999;
+}
+.container-do img {
+    width: 50%;
+    height: 18rem;
+    border-radius: 3px;
+    object-fit: cover;
+    transition: .3s;
+}
+.content-do {
+    padding: 1rem;
+    width: 50%;
+}
+.content-do H3 {
+    color: #2c2c2c;
+    text-align: center;
+    padding-bottom: .5rem;
+    letter-spacing: 2px;
+} 
+.content-do p {
+    font-size: 1rem;
+    color: #2c2c2c;
+    letter-spacing: 2px;
+    line-height: 1.2rem;
+}
+/*Responsive design in Main / Beaches / activities*/
+@media screen and (max-width: 1200px) {   
+    .primary-main {
+        padding: 5%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .primary-main {
+        padding: 0;
+    }
+    .main-activities-division {
+        padding: 5px;
+    }
+    /*Sub beaches*/
+    .sub-main-beaches {
+        padding: 5%;
+    }
+    /*Sub activities*/
+    .sub-main-activity {
+        padding: 5%;
+    }
+} 
+@media screen and (max-width: 768px) {
+    .primary-main {
+        padding: 0;
+    }  
+    .main-activity {
+        padding: 0;
+    }
+    .main-activities-container {
+        padding: 0 8%;
+    }  
+    .main-activities-content {
+        display: block;
+    }
+    .main-activities-division {
+        margin-bottom: 1rem;
+    }
+    /*Sub-beaches*/
+    .header-beaches h1 {
+        font-size: 2rem;
+        padding-top: 10%;
+    }
+    .sub-main-beaches {
+        padding: 0;
+    }
+    .beaches-content {
+        padding: 1rem 10px 0;
+    }
+    /*Sub-activity*/
+    .header-luzviminda-activity h1 {
+        font-size: 2rem;
+        padding-top: 10%;
+    }
+    .sub-main-activity {
+        padding: 0;
+    }
+    .navbar-activity {
+        padding: 0;
+    }
+    .activity-content {
+        padding: 10px;
+    } 
+    /*Do activity*/ 
+    .header-do h1 {
+        font-size: 2rem;
+        padding-top: 10%;
+    }
+    .main-do {
+        padding: 0;
+    }
+    .navbar-do {
+        padding: 0;
+    }
+    .content-do {
+        padding: 10px;
+    } 
+ }
+@media screen and (max-width: 481px) {
+    .main-header {
+        padding: 10px 0;
+    } 
+    .main-header h1 {
+        font-size: 4rem;
+    }
+    .img1 {
+        grid-area: img1;
+    }
+    .img2 {
+        grid-area: 1mg2; 
+    }
+    .img3 {
+        grid-area: img3;
+    }
+    .main-beaches-container {
+        display: grid;
+        gap: 1rem;
+        box-shadow: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 20rem);
+        grid-template-areas: 
+        " img1 "
+        " img2 "   
+        " img3 ";      
+    } 
+    .main-beaches-content {
+        box-shadow: 3px 3px 10px #999;
+    }
+    .main-activities-container {
+        padding: 0;
+    } 
+    .main-activities-division {
+        padding: 0;
+        box-shadow: 3px 3px 10px #999;
+    } 
+    /*Sub-beaches*/
+    .navbar-beaches {
+        padding-top: 0;
+    } 
+    .beaches-container {
+        display: block;
+    } 
+    .beaches-container img {
+        height: 14rem;
+    }
+    .beaches-content {
+        width: 100%;
+    }   
+    /*Sub-activity*/
+    .navbar-activity {
+        padding-top: 0;
+    }
+    .activity-container {
+        display: block;
+    } 
+    .activity-container img {
+        height: 15rem;
+        width: 100%;
+    }
+    .activity-content {
+        width: 100%;
+    } 
+    /*Do activity*/
+    .navbar-do {
+        padding-top: 0;
+    }
+    .container-do {
+        display: block;
+    } 
+    .container-do img {
+        height: 15rem;
+        width: 100%;
+    }
+    .content-do {
+        width: 100%;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
