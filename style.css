@@ -99,11 +99,11 @@ li {
 .main-section-beaches {
     margin-top: 8%;
 }
-.main-section-beaches-heading { 
-    text-align: center; 
+.main-section-beaches-heading {
+    text-align: center;
+    padding: 1%;
     background: #2c2c2c;
-    padding: 1em 0;
-} 
+}
 .main-section-beaches-heading h2 {
     color: #fff;
     letter-spacing: 2.5px;
@@ -144,6 +144,9 @@ li {
 .main-beaches-content img:hover {
     transform: scale(1.01);
 }
+.main-beaches-content h3 {
+    padding: 1% 2%;
+}
 .main-beaches-content p {
     position: absolute;
     bottom: 0;
@@ -159,10 +162,10 @@ li {
 .main-section-activities {
     margin-top: 8%;
 }
-.main-section-activities-heading {
+.main-section-activities {
     text-align: center;
 }
-.main-section-activities-heading h2 {
+.main-section-activities h2 {
     color: #fff;
     letter-spacing: 2.4px;
     padding: .5em;
@@ -229,7 +232,7 @@ li {
     color: #000;
     font-family: sans-serif;
 }
-.header-section-beaches h2 {
+.section-beaches h2 {
     margin-top: 1rem;
     color: #fff;
     text-align: center;
@@ -308,9 +311,9 @@ li {
     padding: 12% 0 2%; 
     font-family: sans-serif;  
 }
-.header-section-activity h2 {
-    margin-top: 1rem;
+.section-activity h2 {
     color: #fff;
+    margin-top: 1rem;
     text-align: center;
     padding: 5px;
     letter-spacing: 2.4px;
@@ -402,7 +405,6 @@ li {
     text-decoration: underline 2px;
     color: #4356ff;
 }
-
 .section-header-do h2 {
     margin-top: 1rem;
     text-align: center;
